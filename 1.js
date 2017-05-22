@@ -3,15 +3,15 @@
 //Find the sum of all the multiples of 3 or 5 below 1000.
 
 function multi(num){
-  var num_arr = []
+  var numArr = []
   for (i = 1; i < num; i++)
     if (i % 3 === 0){
-      num_arr.push(i);
+      numArr.push(i);
     } else if (i % 5 === 0) {
-      num_arr.push(i);
+      numArr.push(i);
     }
-  var sum = num_arr.reduce(function(x,y) {return x + y;}, 0);
+  var sum = numArr.reduce(function(x,y) {return x + y;}, 0);
   console.log(sum);
 }
 
-multi(10);
+multi(1000);
