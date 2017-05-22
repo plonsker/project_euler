@@ -3,19 +3,24 @@
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 //
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+
 //https://projecteuler.net/problem=2
 
 function fib(num){
   var x = 0;
   var y = 1;
+  var fibArr = []
 
   for (i=0; i <num; i++){
     var z = x;
     x = y;
     y = z + x;
+    if (y < 4000000 && y % 2 ===0)
+      fibArr.push(y);
 
-    console.log(y);
+      var sum = fibArr.reduce(function(x,y) {return x + y;}, 0);
   }
+  console.log(sum)
 }
 
-fib(100)
+fib(100);
