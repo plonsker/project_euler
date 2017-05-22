@@ -24,3 +24,5 @@ function fib(num){
 }
 
 fib(100);
+
+// answer is 4613732
