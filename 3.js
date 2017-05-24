@@ -16,10 +16,9 @@ function primeFact(num){
   // range of 1 through x
   console.log(numArr);
   for (var x in numArr){
-    var index = numArr.indexOf(x);
-    for (i = 1; i <= x; i++){
-      if (x % i === 0){
-        numArr.splice(index, 1);
+    for (i = 1; i <= numArr[x]; i++){
+      if (numArr[x] % i === 0){
+        console.log(numArr[x]);
       }
     }
   }
