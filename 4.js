@@ -49,13 +49,13 @@
 
 
 function pali(num){
-  console.log(num);
+
   var numStr = num.toString();
   var numArr = numStr.split('');
   console.log(numArr);
   console.log(numArr.reverse());
   console.log(numArr.reverse().join(''));
-  if (numArr.join('') === numArr.reverse().join('')){
+  if (numArr.join('') == numArr.reverse().join('')){
     return true;
   } else {
     return false;
@@ -77,8 +77,15 @@ function paliFinder(){
   for (var x in arr1){
     for (var y in arr2){
         var crossProduct = arr1[x] * arr2[y];
-        console.log(crossProduct);
         crossCheck.push(crossProduct);
+
+        //I get it now. I'm just pulling the first one.
+        if (pali(crossProduct)){
+          console.log("--------------");
+          console.log(crossProduct);
+          console.log("--------------");
+          {break;}
+        }
     }
   }
 
