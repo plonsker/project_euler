@@ -1,7 +1,3 @@
-
-
-
-
 def fib():
     x = 0
     y = 1
@@ -17,6 +13,5 @@ def fib():
             total = total + y
 
     print total
-    print "hey"
 
 fib()
