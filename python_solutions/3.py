@@ -11,8 +11,10 @@ def prime_finder(num):
 
     print num_list
 
+    
+
     for factor in num_list:
-        if factor % 5 == 0:
+        if factor %  3 == 0:
             num_list.remove(factor)
 
     print num_list
