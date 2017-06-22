@@ -13,4 +13,4 @@ def prime_finder(num):
 
     print num_list
 
-prime_finder(13195)
+prime_finder(600851475143)
