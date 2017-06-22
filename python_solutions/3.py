@@ -11,11 +11,14 @@ def prime_finder(num):
 
     print num_list
 
-    
+    for num in num_list:
+        if num % 13 == 0:
+            num_list.remove(num)
 
-    for factor in num_list:
-        if factor %  3 == 0:
-            num_list.remove(factor)
+
+
+
+
 
     print num_list
 
