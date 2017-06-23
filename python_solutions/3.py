@@ -3,18 +3,14 @@
 #What is the largest prime factor of the number 600851475143 ?
 
 def prime_finder(num):
-    num_list = []
+
+    num_list =[]
 
     for possible_factor in range(2,num):
-        if num % possible_factor == 0:
+        while num % possible_factor == 0:
             num_list.append(possible_factor)
+            num = num / possible_factor
 
     print num_list
 
-    for factor in num_list:
-        if factor % 5 == 0:
-            num_list.remove(factor)
-
-    print num_list
-
-prime_finder(13195)
+prime_finder(600851475143)
