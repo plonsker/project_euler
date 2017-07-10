@@ -2,15 +2,21 @@
 #
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-def small_checker():
 
-    num_list = range(20,1000000)
-    divider_list = range(1,20)
+# def divisible(num):
+#     num_list = range(1,10)
+#     print all(map(lambda y: num%y == 0, num_list))
+#
+# divisible(2520)
 
-    for num in num_list:
-        res = all([num%x==0 for x in range(1,20)])
-        if res == True:
-            print num
+def small_checker(num_input):
 
+    num_list = range(1,20)
 
-small_checker()
+    for num in num_input:
+        print all(map(lambda y: num%y == 0, num_list))
+        print num
+        if all(map(lambda y: num%y == 0, num_list)):
+            break
+
+small_checker(range(1,100000000))
