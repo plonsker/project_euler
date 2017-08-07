@@ -2,11 +2,23 @@
 #
 # What is the 10 001st prime number?
 
-def prime_finder(num):
+def is_prime(num):
 
     for i in range(2,num):
         if num % i == 0:
             return False
     return True
 
-print prime_finder(4)
+print is_prime(7)
+
+
+def prime_collector(num_range):
+    prime_list = []
+
+    for num in num_range:
+        if is_prime(num):
+            prime_list.append(num)
+
+    print prime_list[10001]
+
+prime_collector(range(2,10000))
