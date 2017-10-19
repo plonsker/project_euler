@@ -37,7 +37,7 @@
 
 def trip_finder():
     # the basic logic
-    num_list = range(1,1001)
+    num_list = range(200,1001)
 
     for num in num_list:
         for num_2 in num_list:
