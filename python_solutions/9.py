@@ -1,76 +1,17 @@
-# def trip(num_1,num_2,num_3):
-#     print(num_1**2)
-#     print(num_2**2)
+# A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 #
-#     print(num_1**2 + num_2**2)
-#     print(num_3**2)
+# a2 + b2 = c2
+# For example, 32 + 42 = 9 + 16 = 25 = 52.
 #
-#     print(num_1 + num_2 + num_3)
-#
-# trip(3,4,5)
+# There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+# Find the product abc.
 
-
-# def trip_finder():
-#     num_list = range(1001)
-#     i = 1
-#     j = 2
-#
-#     for num in num_list:
-#         print(num)
-#         print(num+i)
-#         print(num+j)
-#         print("")
-#         print(num + (num+i) + (num+j))
-#         print("")
-#         print("")
-#         j += 1
-#         if num**2 + (num+i)**2 == (num+j)**2 and num + num_1 + num_2 == 1000:
-#             print(num)
-#             print(num+i)
-#             print(num+j)
-#         else:
-#             trip_finder
-#
-#
-# trip_finder()
-
-
-def trip_finder():
-    # the basic logic
-    num_list = range(200,1001)
-
+def trip_finder(num_list):
+    i = 0
     for num in num_list:
-        for num_2 in num_list:
-            for num_3 in num_list:
-                if num < num_2 < num_3:
-                    if num**2 + (num_2)**2 == (num_3)**2 and num + num_2 + num_3 == 1000:
-                        print(num)
-                        print(num_2)
-                        print(num_3)
-                        break
-                    else:
-                        print("")
-                        print(num)
-                        print(num_2)
-                        print(num_3)
-                        print("")
-                        print("-----------")
-                        print("~----------")
-                        print("-~---------")
-                        print("--~--------")
-                        print("---~-------")
-                        print("----~------")
-                        print("-----~-----")
-                        print("------~----")
-                        print("-------~---")
-                        print("--------~--")
-                        print("---------~-")
-                        print("----------~")
+
+lkjlk
 
 
 
-
-
-
-
-trip_finder()
+# trip_finder()
