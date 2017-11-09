@@ -42,14 +42,12 @@
 # There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 # Find the product abc.
 def trip_finder():
-    for a in range(325,675):
-        for b in range(325,675):
-            for c in range(325,675):
+    for a in range(200,675):
+        for b in range(200,675):
+            for c in range(200,675):
                 if a<b and b<c:
                     if a**2 + b**2 == c**2 and a + b + c == 1000:
-                        print(a)
-                        print(b)
-                        print(c)
+                        print(a * b * c)
                         break
 
 
