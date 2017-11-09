@@ -1,10 +1,9 @@
-# def trip(num_1,num_2,num_3):
-#     print(num_1**2)
-#     print(num_2**2)
+# A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 #
-#     print(num_1**2 + num_2**2)
-#     print(num_3**2)
+# a2 + b2 = c2
+# For example, 32 + 42 = 9 + 16 = 25 = 52.
 #
+
 #     print(num_1 + num_2 + num_3)
 #
 # trip(3,4,5)
@@ -50,10 +49,15 @@ def trip_finder():
                         print(a * b * c)
                         break
 
+=======
+# There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+# Find the product abc.
+
+def trip_finder(num_list):
+    i = 0
+    for num in num_list:
 
 
 
 
-
-
-trip_finder()
+# trip_finder()
